@@ -1,5 +1,5 @@
 # Perfil2-PowerLetters
-• Nombre del proyecto: Teresa Yessenia Ruiz
+• Nombre del proyecto: PowerLetters
 • Descripción del proyecto: Sistema de gestión de una tienda de libros
 • Integrantes del equipo:
 1. Teresa Yessenia Ruiz González (20220651)
