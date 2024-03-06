@@ -1,26 +1,55 @@
 USE powerletters;
 
 /*TRIGGER*/
-	CREATE TRIGGER tr_actualizar_estado
-	AFTER INSERT ON tb_pedidos
-	FOR EACH ROW
-	UPDATE tb_pedidos SET estado = 'PENDIENTE' WHERE id_pedido = NEW.id_pedido;
+	-- Este trigger se activará después de insertar un nuevo pedido
+DELIMITER //
+CREATE TRIGGER tr_actualizar_existencias
+AFTER INSERT ON tb_detalle_pedido
+FOR EACH ROW
+BEGIN
+    -- Actualiza las existencias del libro afectado por el nuevo pedido
+    UPDATE tb_libros
+    SET existencias = existencias - NEW.cantidad
+    WHERE id_libro = NEW.id_libro;
+END //
+DELIMITER ;
 	
 	/*fUNCION*/
-	DELIMITER //
-	CREATE FUNCTION calcular_total(id_pedido INT) RETURNS DECIMAL(10,2)
-	BEGIN
+	-- Esta función recibe el id de un pedido y devuelve el total calculado
+DELIMITER //
+CREATE FUNCTION calcular_total_pedido(pedido_id INT) RETURNS DECIMAL(10,2)
+BEGIN
     DECLARE total DECIMAL(10,2);
-    SELECT SUM(precio * cantidad) INTO total FROM tb_libros WHERE id_libro IN (SELECT id_libro FROM tb_detallePedido WHERE id_pedido = id_pedido);
+    
+    -- Calcula el total sumando el precio de los libros en el pedido
+    SELECT SUM(l.precio * dp.cantidad)
+    INTO total
+    FROM tb_detalle_pedido dp
+    JOIN tb_libros l ON dp.id_libro = l.id_libro
+    WHERE dp.id_pedido = pedido_id;
+    
     RETURN total;
-	 END //
-	DELIMITER ;
+END //
+DELIMITER ;
 	
 	/*procedimiento*/
 	
-	DELIMITER //
-	CREATE PROCEDURE actualizar_existencias(id_libro INT, cantidad INT)
-	BEGIN
-	UPDATE tb_libros SET existencias = existencias - cantidad WHERE id_libro = id_libro;
-	END //
-	DELIMITER ;
+	-- Este procedimiento recibe los datos de una reseña y la inserta en la tabla tb_resenias
+-- Luego, actualiza el contador de reseñas en el libro correspondiente
+DELIMITER //
+CREATE PROCEDURE insertar_resena_y_actualizar_contador(
+    libro_id INT,
+    usuario_id INT,
+    comentario VARCHAR(250)
+)
+BEGIN
+    -- Inserta la nueva reseña en la tabla tb_resenias
+    INSERT INTO tb_resenias (id_libro, id_usuario, comentario)
+    VALUES (libro_id, usuario_id, comentario);
+ 
+    -- Actualiza el contador de reseñas en el libro correspondiente
+    UPDATE tb_libros
+    SET contador_resenias = contador_resenias + 1
+    WHERE id_libro = libro_id;
+END //
+DELIMITER ;
