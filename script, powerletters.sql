@@ -23,7 +23,7 @@ CREATE TABLE tb_administradores (
     fecha_registro DATETIME,
     imagen VARCHAR(25)
 );
- 
+
 CREATE TABLE tb_genero (
     id_genero INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(20)
@@ -57,6 +57,8 @@ CREATE TABLE tb_libros (
     id_editorial INT,
     id_administrador INT,
     existencias INT,
+    id_genero INT,
+    CONSTRAINT fk_generolibro FOREIGN KEY (id_genero) REFERENCES tb_genero(id_genero),
     CONSTRAINT fk_administrador FOREIGN KEY (id_administrador) REFERENCES tb_administradores(id_administrador),
     CONSTRAINT fk_autor FOREIGN KEY (id_autor) REFERENCES tb_autores(id_autor),
     CONSTRAINT fk_clasificacion FOREIGN KEY (id_clasificacion) REFERENCES tb_clasificaciones(id_clasificacion),
@@ -71,28 +73,20 @@ CREATE TABLE tb_pedidos (
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES tb_usuarios(id_usuario)
 );
  
+CREATE TABLE tb_resenias (
+    id_resena INT PRIMARY KEY AUTO_INCREMENT,
+    comentario VARCHAR(250) 
+);
+
 CREATE TABLE tb_detalle_pedido (
     id_detalle INT PRIMARY KEY AUTO_INCREMENT,
     id_pedido INT,
     id_libro INT,
     cantidad INT,
+    id_resena INT,
     CONSTRAINT fk_pedido FOREIGN KEY (id_pedido) REFERENCES tb_pedidos(id_pedido),
-    CONSTRAINT fk_libro FOREIGN KEY (id_libro) REFERENCES tb_libros(id_libro)
+    CONSTRAINT fk_libro FOREIGN KEY (id_libro) REFERENCES tb_libros(id_libro),
+    CONSTRAINT fk_resenia FOREIGN KEY (id_resena) REFERENCES tb_resenias(id_resena)
 );
- 
-CREATE TABLE tb_resenias (
-    id_resena INT PRIMARY KEY AUTO_INCREMENT,
-    id_libro INT,
-    id_usuario INT,
-    comentario VARCHAR(250) 
-);
-
-	ALTER TABLE tb_resenias
-	ADD CONSTRAINT fk_libros1 
-	FOREIGN KEY (id_libro) 
-	REFERENCES tb_libros(id_libro);
 	
-	ALTER TABLE tb_resenias
-	ADD CONSTRAINT fk_usuario1 
-	FOREIGN KEY (id_usuario) 
-	REFERENCES tb_usuarios(id_usuario);
+	
