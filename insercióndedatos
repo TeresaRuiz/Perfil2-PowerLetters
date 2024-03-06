@@ -1,0 +1,280 @@
+USE powerletters;
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Juan Pérez', 'jperez', 'jperez@gmail.com', 'clave123', 'Calle Principal 123', '555-1234', 'imagen1.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('María García', 'mgarcia', 'mgarcia@gmail.com', 'password456', 'Avenida Central 456', '555-5678', 'imagen2.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Luis Rodríguez', 'lrodriguez', 'lrodriguez@gmail.com', 'contraseña789', 'Plaza Mayor 789', '555-9012', 'imagen3.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Ana Martínez', 'amartinez', 'amartinez@gmail.com', 'clave456', 'Calle Secundaria 456', '555-3456', 'imagen4.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Pedro López', 'plopez', 'plopez@gmail.com', 'password789', 'Avenida Principal 789', '555-6789', 'imagen5.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Laura Sánchez', 'lsanchez', 'lsanchez@gmail.com', 'clave789', 'Calle Central 789', '555-2345','imagen6.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Carlos Ramírez', 'cramirez', 'cramirez@gmail.com', 'contraseña123', 'Avenida Secundaria 123', '555-4567','imagen7.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Sofía Torres', 'storres', 'storres@gmail.com', 'password1234', 'Calle Mayor 234', '555-7890','imagen8.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Javier Gómez', 'jgomez', 'jgomez@gmail.com', 'clave5678', 'Plaza Central 5678','555-1234','imagen9.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Marcela López', 'mlopez', 'mlopez@gmail.com', 'password234', 'Calle Principal 234', '555-5678', 'imagen10.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Ricardo Martínez', 'rmartinez', 'rmartinez@gmail.com', 'clave7890', 'Avenida Central 7890', '555-9012', 'imagen11.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Isabel Fernández', 'ifernandez', 'ifernandez@gmail.com', 'password5678', 'Plaza Secundaria 5678', '555-3456','imagen12.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Diego Soto', 'dsoto', 'dsoto@gmail.com', 'clave78901', 'Calle Nueva 78901', '555-6789','imagen13.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Carolina Ramírez', 'cramirez2', 'cramirez2@gmail.com', 'password3456', 'Avenida Nueva 3456','555-2345','imagen14.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Roberto Torres', 'rtorres2', 'rtorres2@gmail.com', 'clave1234', 'Calle Vieja 1234','555-4567','imagen15.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Elena Gutiérrez', 'egutierrez', 'egutierrez@gmail.com', 'password6789', 'Avenida Vieja 6789', '555-7890','imagen16.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Francisco Silva', 'fsilva', 'fsilva@gmail.com', 'clave5678', 'Plaza Nueva 5678','555-1234','imagen17.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Carmen Morales', 'cmorales', 'cmorales@gmail.com', 'password9012', 'Calle Antigua 9012','555-5678','imagen18.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Alejandro Pérez', 'aperez2', 'aperez2@gmail.com', 'clave2345', 'Avenida Antigua 2345','555-9012','imagen19.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Silvia Navarro', 'snavarro', 'snavarro@gmail.com', 'password6789', 'Plaza Vieja 6789','555-3456','imagen20.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Jorge Vargas', 'jvargas2', 'jvargas2@gmail.com', 'clave4567', 'Calle Moderna 4567','555-6789','imagen21.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Andrea Jiménez', 'ajimenez', 'ajimenez@gmail.com', 'password3456', 'Avenida Moderna 3456', '555-2345','imagen22.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Martín Castro', 'mcastro', 'mcastro@gmail.com', 'clave7890', 'Calle Futura 7890', '555-4567','imagen23.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Lucía Herrera', 'lherrera', 'lherrera@gmail.com', 'password1234', 'Plaza Moderna 1234','555-6789','imagen24.jpg');
+
+INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
+VALUES ('Pablo Ortega', 'portega', 'portega@gmail.com', 'clave5678', 'Avenida Futura 5678','555-9012','imagen25.jpg')
+
+SELECT*FROM tb_usuarios;
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Lionel Messi', 'lmessi', 'lmessi@gmail.com', 'messi123', '555-1234', '2024-03-06 10:00:00', 'imagen1.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Gerard Piqué', 'gpique', 'gpique@gmail.com', 'pique456', '555-5678', '2024-03-06 10:15:00', 'imagen2.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Sergio Busquets', 'sbusquets', 'sbusquets@gmail.com', 'busquets789', '555-9012', '2024-03-06 10:30:00', 'imagen3.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Jordi Alba', 'jalba', 'jalba@gmail.com', 'alba234', '555-3456', '2024-03-06 10:45:00', 'imagen4.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Ansu Fati', 'afati', 'afati@gmail.com', 'fati5678', '555-6789', '2024-03-06 11:00:00','imagen5.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Frenkie de Jong', 'fdejong', 'fdejong@gmail.com', 'dejong890', '555-7890', '2024-03-06 11:15:00', 'imagen6.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Ousmane Dembélé', 'odembele', 'odembele@gmail.com', 'dembele456', '555-2345', '2024-03-06 11:30:00', 'imagen7.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Ronald Araújo', 'raraujo', 'raraujo@gmail.com', 'araujo789', '555-9012', '2024-03-06 11:45:00', 'imagen8.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Pedri González', 'pgonzalez', 'pgonzalez@gmail.com', 'pedri123', '555-6789', '2024-03-06 12:00:00', 'imagen9.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Memphis Depay', 'mdepay', 'mdepay@gmail.com', 'depay456', '555-3456', '2024-03-06 12:15:00', 'imagen10.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Eric García', 'egarcia', 'egarcia@gmail.com', 'garcia789', '555-9012', '2024-03-06 12:30:00', 'imagen11.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Sergi Roberto', 'sroberto', 'sroberto@gmail.com', 'roberto123', '555-1234', '2024-03-06 12:45:00', 'imagen12.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Riqui Puig', 'rpuig', 'rpuig@gmail.com', 'puig456', '555-5678', '2024-03-06 13:00:00', 'imagen13.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Samuel Umtiti', 'sumtiti', 'sumtiti@gmail.com', 'umtiti789', '555-9012', '2024-03-06 13:15:00', 'imagen14.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Oscar Mingueza', 'omingueza', 'omingueza@gmail.com', 'mingueza234', '555-3456', '2024-03-06 13:30:00', 'imagen15.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Alex Collado', 'acollado', 'acollado@gmail.com', 'collado5678', '555-6789', '2024-03-06 13:45:00','imagen16.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Ilaix Moriba', 'imoriba', 'imoriba@gmail.com', 'moriba123', '555-2345', '2024-03-06 14:00:00', 'imagen17.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Konrad de la Fuente', 'kdelafuente', 'kdelafuente@gmail.com', 'fuente456', '555-5678', '2024-03-06 14:15:00', 'imagen18.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Matheus Fernandes', 'mfernandes', 'mfernandes@gmail.com', 'fernandes789', '555-9012', '2024-03-06 14:30:00', 'imagen19.jpg');
+
+-- Continúa agregando los datos restantes de manera similar
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Ricard Puig Martí', 'rpuigmarti', 'rpuigmarti@gmail.com', 'puigmarti234', '555-3456', '2024-03-06 14:45:00', 'imagen20.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Arnau Tenas Ureña', 'atenasurena', 'atenasurena@gmail.com', 'tenasurena5678', '555-6789','2024-03-06 15:00:00','imagen21.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Iñaki Peña', 'ipena', 'ipena@gmail.com', 'pena123', '555-7890', '2024-03-06 15:15:00', 'imagen22.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Álex Balde', 'abalde', 'abalde@gmail.com', 'balde456', '555-2345', '2024-03-06 15:30:00', 'imagen23.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Sergiño Dest', 'sdest', 'sdest@gmail.com', 'dest789', '555-9012', '2024-03-06 15:45:00', 'imagen24.jpg');
+
+INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
+VALUES ('Rafinha Alcántara', 'ralcantara', 'ralcantara@gmail.com', 'alcantara234', '555-3456', '2024-03-06 16:00:00','imagen25.jpg');
+
+SELECT*FROM tb_administradores;
+
+
+INSERT INTO tb_genero (nombre)
+VALUES ('Ficción'), 
+('Ciencia Ficción'),
+('Fantasía'), 
+('Misterio'), 
+('Terror'), 
+('Biografía'), 
+('Historia'), 
+('Novela'), 
+('Poesía'), 
+('Infantil'), 
+('Juvenil'), 
+('Ciencia'), 
+('Tecnología'), 
+('Economía'), 
+('Negocios'), 
+('Salud'), 
+('Cocina'), 
+('Arte'), 
+('Deportes'), 
+('Musica'), 
+('Cine'), 
+('Teatro'), 
+('Música'), 
+('Tecnología'), 
+('Videojuegos'), 
+('Juegos de mesa'), 
+('Colección');
+
+SELECT*FROM tb_genero;
+
+INSERT INTO tb_clasificaciones (nombre, descripcion)
+VALUES ('Best Seller', 'Libros más vendidos y populares del momento'),
+('Clásico', 'Obras literarias reconocidas por su relevancia histórica y cultural'),
+('Romántico', 'Historias de amor y relaciones sentimentales'),
+('Suspenso', 'Narrativas que mantienen al lector en tensión y expectativa'),
+('Aventura', 'Relatos emocionantes llenos de acción y riesgo'),
+('Histórico', 'Novelas basadas en eventos históricos o ambientadas en épocas pasadas'),
+('Fantástico', 'Mundos imaginarios, seres mágicos y elementos sobrenaturales'),
+('Autoayuda', 'Libros que buscan el desarrollo personal y el bienestar emocional'),
+('Ciencia Ficción', 'Exploración de futuros posibles, tecnología avanzada y realidades alternativas'),
+('Policiaco', 'Tramas de crimen, detectives y misterios por resolver'),
+('Humor', 'Obras que buscan entretener y provocar risas'),
+('Drama', 'Narrativas intensas y emotivas que exploran conflictos humanos'),
+('Fantasía Épica', 'Mundos épicos, batallas y magia en historias de gran escala'),
+('Thriller Psicológico', 'Suspense centrado en la mente y emociones de los personajes'),
+('Novela Negra', 'Historias de crimen, intriga y corrupción'),
+('Ciencia', 'Divulgación científica y exploración de conceptos científicos'),
+('Terror', 'Narrativas que provocan miedo y tensión en el lector'),
+('Romance', 'Relatos de amor y relaciones sentimentales'),
+('Biografía', 'Historias reales de la vida de personas destacadas'),
+('Viajes', 'Relatos de aventuras y descubrimientos en diferentes lugares del mundo'),
+('Ciencia y Tecnología', 'Libros que abordan temas científicos y avances tecnológicos'),
+('Novela Gráfica', 'Narrativas ilustradas que combinan texto e imágenes de forma creativa'),
+('Autores Clásicos', 'Obras de escritores reconocidos por su influencia en la literatura'),
+('Crecimiento Personal', 'Libros enfocados en el desarrollo personal y profesional'),
+('Arte y Diseño', 'Exploración de expresiones artísticas y conceptos de diseño'),
+('Cocina y Gastronomía', 'Recetas, técnicas culinarias y exploración de la gastronomía'),
+('Historia Mundial', 'Relatos históricos que abarcan diferentes épocas y culturas'),
+('Religión y Espiritualidad', 'Textos sobre creencias religiosas y prácticas espirituales'),
+('Ciencias Sociales', 'Estudios sobre la sociedad, la política y las relaciones humanas'),
+('Literatura Infantil', 'Cuentos y libros para niños que fomentan la imaginación y el aprendizaje');
+
+SELECT*FROM tb_clasificaciones;
+
+INSERT INTO tb_autores (nombre, biografia)
+VALUES ('Gabriel García Márquez', 'Escritor colombiano, premio Nobel de Literatura conocido por "Cien años de soledad"'),
+('Jane Austen', 'Escritora británica del siglo XIX, autora de "Orgullo y Prejuicio"'),
+('Haruki Murakami', 'Escritor japonés contemporáneo, autor de "Tokio Blues"'),
+('Agatha Christie', 'Escritora británica de novelas policíacas, creadora de Hercule Poirot'),
+('J.K. Rowling', 'Escritora británica creadora de la saga de Harry Potter'),
+('Mario Vargas Llosa', 'Escritor peruano, premio Nobel de Literatura por su obra narrativa'),
+('Virginia Woolf', 'Escritora británica modernista, autora de "La señora Dalloway"'),
+('Albert Camus', 'Escritor francés y filósofo existencialista, autor de "El extranjero"'),
+('Emily Dickinson', 'Poetisa estadounidense del siglo XIX conocida por su estilo único'),
+('Gabriela Mistral', 'Poetisa chilena y premio Nobel de Literatura por su obra poética'),
+('Julio Cortázar', 'Escritor argentino conocido por su obra "Rayuela" y su estilo innovador'),
+('Margaret Atwood', 'Escritora canadiense autora de "El cuento de la criada"'),
+('Pablo Neruda', 'Poeta chileno y premio Nobel de Literatura por su poesía lírica'),
+('George Orwell', 'Escritor británico conocido por "1984" y "Rebelión en la granja"'),
+('Isabel Allende', 'Escritora chilena reconocida por novelas como "La casa de los espíritus"'),
+('Fyodor Dostoevsky', 'Escritor ruso del siglo XIX, autor de "Crimen y castigo"'),
+('Marguerite Duras', 'Escritora francesa conocida por "El amante" y su estilo intimista'),
+('Ernest Hemingway', 'Escritor estadounidense ganador del premio Nobel, autor de "El viejo y el mar"'),
+('Toni Morrison', 'Escritora afroamericana ganadora del premio Nobel por sus novelas sobre la experiencia negra en América'),
+('Italo Calvino', 'Escritor italiano conocido por obras como "Las ciudades invisibles" y "El barón rampante"'),
+('Sylvia Plath', 'Poetisa estadounidense y novelista, autora de "La campana de cristal"'),
+('José Saramago', 'Escritor portugués ganador del premio Nobel, autor de "Ensayo sobre la ceguera"'),
+('Clarice Lispector', 'Escritora brasileña conocida por su estilo introspectivo y experimental en obras como "La hora de la estrella"'),
+('Octavio Paz', 'Poeta mexicano y premio Nobel de Literatura reconocido por su poesía vanguardista y ensayos literarios'),
+('Hermann Hesse', 'Escritor alemán autor de obras como "El lobo estepario" y "Siddhartha"');
+
+SELECT*FROM tb_autores;
+
+INSERT INTO tb_editoriales (nombre)
+VALUES ('Penguin Random House'),
+('HarperCollins'),
+('Simon & Schuster'),
+('Hachette Livre'),
+('Macmillan Publishers'),
+('Scholastic Corporation'),
+('Pearson Education'),
+('Oxford University Press'),
+('Cambridge University Press'),
+('Bloomsbury Publishing'),
+('Penguin Books'),
+('Vintage Books'),
+('Pantheon Books'),
+('Farrar, Straus and Giroux'),
+('Knopf Doubleday Publishing Group'),
+('Houghton Mifflin Harcourt'),
+('Wiley Publishing'),
+('Elsevier'),
+('Springer Nature'),
+('Taylor & Francis Group'),
+('John Wiley & Sons'),
+('McGraw-Hill Education'),
+('Cengage Learning'),
+('Pearson Longman'),
+('Routledge');
+
+SELECT*FROM tb_editoriales;
