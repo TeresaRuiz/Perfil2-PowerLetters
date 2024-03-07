@@ -4,7 +4,7 @@ USE powerletters;
 	-- Este trigger se activará después de insertar un nuevo pedido
 DELIMITER //
 CREATE TRIGGER tr_actualizar_existencias
-AFTER INSERT ON tb_detalle_pedido
+AFTER INSERT ON tb_detalle_pedidos
 FOR EACH ROW
 BEGIN
     -- Actualiza las existencias del libro afectado por el nuevo pedido
@@ -24,7 +24,7 @@ BEGIN
     -- Calcula el total sumando el precio de los libros en el pedido
     SELECT SUM(l.precio * dp.cantidad)
     INTO total
-    FROM tb_detalle_pedido dp
+    FROM tb_detalle_pedidos dp
     JOIN tb_libros l ON dp.id_libro = l.id_libro
     WHERE dp.id_pedido = pedido_id;
     
@@ -53,3 +53,18 @@ BEGIN
     WHERE id_libro = libro_id;
 END //
 DELIMITER ;
+
+-- Verificar que las existencias en tb_libros se hayan actualizado
+SELECT * FROM tb_libros WHERE id_libro = 1;
+
+-- Ejemplo para probar la Función
+SELECT calcular_total_pedido(1) AS total_pedido;
+
+-- Ejemplo para probar el Procedimiento Almacenado
+CALL insertar_resena_y_actualizar_contador(1, 1, 'Excelente libro');
+
+-- Verificar que se haya insertado la reseña en tb_resenias
+SELECT * FROM tb_resenias WHERE id_libro = 1;
+
+-- Verificar que el contador de reseñas en tb_libros se haya actualizado
+SELECT * FROM tb_libros WHERE id_libro = 1;
