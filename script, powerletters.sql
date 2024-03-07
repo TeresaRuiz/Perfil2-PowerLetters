@@ -37,8 +37,8 @@ CREATE TABLE tb_clasificaciones (
  
 CREATE TABLE tb_autores (
     id_autor INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100),
-    biografia VARCHAR(100)
+    nombre VARCHAR(1000),
+    biografia VARCHAR(1000)
 );
  
 CREATE TABLE tb_editoriales (
