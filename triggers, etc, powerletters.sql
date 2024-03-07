@@ -1,7 +1,7 @@
 USE powerletters;
 
-/*TRIGGER*/
-	-- Este trigger se activará después de insertar un nuevo pedido
+	/* TRIGGER */
+-- Este trigger se activará después de insertar un nuevo pedido
 DELIMITER //
 CREATE TRIGGER tr_actualizar_existencias
 AFTER INSERT ON tb_detalle_pedidos
@@ -11,8 +11,9 @@ BEGIN
     UPDATE tb_libros
     SET existencias = existencias - NEW.cantidad
     WHERE id_libro = NEW.id_libro;
-END //
+END;
 DELIMITER ;
+
 	
 	/*fUNCION*/
 	-- Esta función recibe el id de un pedido y devuelve el total calculado
@@ -33,38 +34,14 @@ END //
 DELIMITER ;
 	
 	/*procedimiento*/
-	
-	-- Este procedimiento recibe los datos de una reseña y la inserta en la tabla tb_resenias
--- Luego, actualiza el contador de reseñas en el libro correspondiente
 DELIMITER //
-CREATE PROCEDURE insertar_resena_y_actualizar_contador(
-    libro_id INT,
-    usuario_id INT,
-    comentario VARCHAR(250)
-)
+
+CREATE PROCEDURE actualizar_direccion_usuario(user_id INT, nueva_direccion VARCHAR(100))
 BEGIN
-    -- Inserta la nueva reseña en la tabla tb_resenias
-    INSERT INTO tb_resenias (id_libro, id_usuario, comentario)
-    VALUES (libro_id, usuario_id, comentario);
- 
-    -- Actualiza el contador de reseñas en el libro correspondiente
-    UPDATE tb_libros
-    SET contador_resenias = contador_resenias + 1
-    WHERE id_libro = libro_id;
-END //
+    UPDATE tb_usuarios
+    SET direccion = nueva_direccion
+    WHERE id_usuario = user_id;
+END;
+//
+
 DELIMITER ;
-
--- Verificar que las existencias en tb_libros se hayan actualizado
-SELECT * FROM tb_libros WHERE id_libro = 1;
-
--- Ejemplo para probar la Función
-SELECT calcular_total_pedido(1) AS total_pedido;
-
--- Ejemplo para probar el Procedimiento Almacenado
-CALL insertar_resena_y_actualizar_contador(1, 1, 'Excelente libro');
-
--- Verificar que se haya insertado la reseña en tb_resenias
-SELECT * FROM tb_resenias WHERE id_libro = 1;
-
--- Verificar que el contador de reseñas en tb_libros se haya actualizado
-SELECT * FROM tb_libros WHERE id_libro = 1;
