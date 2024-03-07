@@ -24,26 +24,26 @@ CREATE TABLE tb_administradores (
     imagen VARCHAR(25)
 );
 
-CREATE TABLE tb_genero (
+CREATE TABLE tb_generos (
     id_genero INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100)
+    nombre VARCHAR(20)
 );
  
 CREATE TABLE tb_clasificaciones (
     id_clasificacion INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100),
-    descripcion VARCHAR(200)
+    nombre VARCHAR(20),
+    descripcion VARCHAR(100)
 );
  
 CREATE TABLE tb_autores (
     id_autor INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100),
+    nombre VARCHAR(30),
     biografia VARCHAR(100)
 );
  
 CREATE TABLE tb_editoriales (
     id_editorial INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100)
+    nombre VARCHAR(20)
 );
  
 CREATE TABLE tb_libros (
@@ -58,7 +58,7 @@ CREATE TABLE tb_libros (
     id_administrador INT,
     existencias INT,
     id_genero INT,
-    CONSTRAINT fk_generolibro FOREIGN KEY (id_genero) REFERENCES tb_genero(id_genero),
+    CONSTRAINT fk_generolibro FOREIGN KEY (id_genero) REFERENCES tb_generos(id_genero),
     CONSTRAINT fk_administrador FOREIGN KEY (id_administrador) REFERENCES tb_administradores(id_administrador),
     CONSTRAINT fk_autor FOREIGN KEY (id_autor) REFERENCES tb_autores(id_autor),
     CONSTRAINT fk_clasificacion FOREIGN KEY (id_clasificacion) REFERENCES tb_clasificaciones(id_clasificacion),
@@ -78,7 +78,7 @@ CREATE TABLE tb_resenias (
     comentario VARCHAR(250) 
 );
 
-CREATE TABLE tb_detalle_pedido (
+CREATE TABLE tb_detalle_pedidos (
     id_detalle INT PRIMARY KEY AUTO_INCREMENT,
     id_pedido INT,
     id_libro INT,
@@ -88,6 +88,3 @@ CREATE TABLE tb_detalle_pedido (
     CONSTRAINT fk_libro FOREIGN KEY (id_libro) REFERENCES tb_libros(id_libro),
     CONSTRAINT fk_resenia FOREIGN KEY (id_resena) REFERENCES tb_resenias(id_resena)
 );
-	
-	
-	
