@@ -156,7 +156,7 @@ VALUES ('Rafinha Alcántara', 'ralcantara', 'ralcantara@gmail.com', 'alcantara23
 SELECT*FROM tb_administradores;
 
 
-INSERT INTO tb_genero (nombre)
+INSERT INTO tb_generos (nombre)
 VALUES ('Ficción'), 
 ('Ciencia Ficción'),
 ('Fantasía'), 
@@ -185,7 +185,7 @@ VALUES ('Ficción'),
 ('Juegos de mesa'), 
 ('Colección');
 
-SELECT*FROM tb_genero;
+SELECT*FROM tb_generos;
 
 INSERT INTO tb_clasificaciones (nombre, descripcion)
 VALUES ('Best Seller', 'Libros más vendidos y populares del momento'),
@@ -278,3 +278,101 @@ VALUES ('Penguin Random House'),
 ('Routledge');
 
 SELECT*FROM tb_editoriales;
+
+INSERT INTO tb_libros (titulo, id_autor, precio, descripcion, imagen, id_clasificacion, id_editorial, id_administrador, existencias, id_genero)
+VALUES 
+  ('Cien años de soledad', 1, 15.99, 'Una saga familiar en Macondo', 'imagen1.jpg', 1, 1, 1, 50, 1),
+  ('Orgullo y Prejuicio', 2, 12.99, 'Amor y prejuicios en la Inglaterra del siglo XIX', 'imagen2.jpg', 2, 2, 2, 30, 2),
+  ('Tokio Blues', 3, 14.50, 'Juventud y melancolía en Tokio', 'imagen3.jpg', 3, 3, 3, 40, 3),
+  ('Asesinato en el Orient Express', 4, 11.75, 'Hercule Poirot resuelve un misterio a bordo del tren', 'imagen4.jpg', 4, 4, 4, 25, 4),
+  ('Harry Potter y la piedra filosofal', 5, 18.25, 'El inicio de las aventuras de Harry Potter en Hogwarts', 'imagen5.jpg', 5, 5, 5, 60, 5),
+  ('La ciudad y los perros', 6, 13.99, 'Vida y violencia en un colegio militar peruano', 'imagen6.jpg', 6, 6 ,6 ,35 ,6),
+  ('Mrs. Dalloway',7 ,16.50 ,'Un día en la vida de Clarissa Dalloway en Londres','imagen7.jpg' ,7 ,7 ,7 ,45 ,7),
+  ('El extranjero' ,8 ,14.75 ,'La indiferencia y absurdo de la existencia','imagen8.jpg' ,8 ,8 ,8 ,20 ,8),
+  ('Poemas' ,9 ,9.99 ,'Colección de poemas de Emily Dickinson','imagen9.jpg' ,9 ,9 ,9 ,50 ,9),
+  ('Desolación' ,10 ,12.25 ,'Poesía íntima y emotiva de Gabriela Mistral','imagen10.jpg' ,10 ,10 ,10 ,30 ,10),
+  ('Rayuela' ,11 ,17.99 ,'Novela experimental y desestructurada','imagen11.jpg' ,11 ,11 ,11 ,40 ,11),
+  ('El cuento de la criada' ,12 ,14.50 ,'Distopía feminista en Gilead','imagen12.jpg' ,12 ,12 ,12 ,55 ,12),
+  ('Veinte poemas de amor y una canción desesperada' ,13 ,11.75 ,'Poesía apasionada de Pablo Neruda','imagen13.jpg' ,13 ,13 ,13 ,25 ,13),
+  ('1984' ,14 ,16.99 ,'Distopía totalitaria y vigilancia extrema','imagen14.jpg' ,14 ,14 ,14 ,60 ,14),
+  ('La casa de los espíritus' ,15 ,18.25 ,'Saga familiar y realismo mágico en Chile','imagen15.jpg' ,15 ,15 ,15 ,40 ,15),
+  ('Crimen y castigo',16,13.99,'Crimen moral y castigo psicológico en San Petersburgo','imagen16.jpg',16,16,16,30,16),
+  ('El amante',17,15.50,'Relato autobiográfico de amor y pasión en Saigón','imagen17.jpg',17,17,17,35,17),
+  ('El viejo y el mar',18,12.75,'Lucha contra la naturaleza y la vejez en el mar Caribe','imagen18.jpg',18,18,18,20,18),
+  ('Beloved',19,14.99,'Exploración del legado del esclavismo en América','imagen19.jpg',19,19,19,45,19),
+  ('Las ciudades invisibles',20,17.25,'Diálogos entre Marco Polo y Kublai Khan sobre ciudades imaginarias','imagen20.jpg',20,20,20,55,20),
+  ('La campana de cristal',21,13.50,'Novela semi-autobiográfica sobre depresión y feminidad','imagen21.jpg',21,21,21,30,21),
+  ('Ensayo sobre la ceguera',22,16.75,'Distopía sobre una epidemia de ceguera repentina','imagen22.jpg',22,22,22,40,22),
+  ('La hora de la estrella',23,11.99,'Historia de Macabéa en Río de Janeiro','imagen23.jpg',23,23,23,25,23),
+  ('Siddhartha',24,15.50,'Búsqueda espiritual y despertar interior en la India','imagen24.jpg',24,24,24,35,24),
+  ('Demian',25,14.75,'Desarrollo personal y dualidad interna del protagonista Emil Sinclair','imagen25.jpg',25,25,25,30,25);
+  
+  SELECT*FROM tb_libros;
+
+INSERT INTO tb_pedidos (fecha_pedido, id_usuario, estado)
+VALUES ('2024-03-06 10:00:00', 1, 'PENDIENTE'),
+('2024-03-06 11:30:00', 2, 'ENTREGADO'),
+('2024-03-06 12:45:00', 3, 'FINALIZADO'),
+('2024-03-06 14:20:00', 4, 'CANCELADO'),
+('2024-03-06 15:10:00', 5, 'PENDIENTE'),
+('2024-03-06 16:00:00', 6, 'PENDIENTE'),
+('2024-03-06 17:30:00', 7, 'ENTREGADO'),
+('2024-03-06 18:45:00', 8, 'FINALIZADO'),
+('2024-03-06 20:20:00', 9, 'CANCELADO'),
+('2024-03-06 21:10:00', 10, 'PENDIENTE'),
+('2024-03-06 22:00:00', 11, 'PENDIENTE'),
+('2024-03-07 09:30:00', 12, 'ENTREGADO'),
+('2024-03-07 10:45:00', 13, 'FINALIZADO'),
+('2024-03-07 12:20:00', 14, 'CANCELADO'),
+('2024-03-07 13:10:00', 15, 'PENDIENTE'),
+('2024-03-07 14:00:00', 16, 'PENDIENTE'),
+('2024-03-07 15:30:00', 17, 'ENTREGADO'),
+('2024-03-07 16:45:00', 18, 'FINALIZADO'),
+('2024-03-07 18:20:00', 19, 'CANCELADO'),
+('2024-03-07 19:10:00', 20, 'PENDIENTE'),
+('2024-03-07 20:00:00', 21, 'PENDIENTE'),
+('2024-03-07 21:30:00', 22, 'ENTREGADO'),
+('2024-03-07 22:45:00', 23, 'FINALIZADO'),
+('2024-03-08 09:20:00', 24, 'CANCELADO'),
+('2024-03-08 10:10:00', 25, 'PENDIENTE');
+
+SELECT*FROM tb_pedidos;
+
+INSERT INTO tb_resenias (comentario)
+values ('Me encanto'), ('Muy bueno'), ('Un poco alto el precio pero estubo bien'), ('lo adore'), ('No me gusto'), ('Compre dos me encanto'),
+('Muy caro el precio'), ('Mucho texto xd'), ('Un clasico'), ('me divirtio lo recomiendo'), ('El autor no me gusta'), ('Muy bueno lo recomiendo'), ('El nombre me encanto'), ('Muy interesante'), ('Me encanto el final'), ('Saquen una peli de este libro'),
+('Era mejor el anterior'), ('Mas texto xd'), ('la trilogia me encanto'), ('me emociono la gran batalla'),('Se me daño'), ('Mas bonito mejor'), ('Mas texto xd'), ('facinante'), ('final hermoso <3');
+
+SELECT*FROM tb_resenias;
+
+INSERT INTO tb_detalle_pedidos (id_pedido, id_libro, cantidad, id_resena)
+VALUES 
+  (1, 1, 2, 1),
+  (2, 2, 1, 2),
+  (3, 3, 3, 3),
+  (4, 4, 1, 4),
+  (5, 5, 2, 5),
+  (6, 6, 1, 6),
+  (7, 7, 4, 7),
+  (8, 8, 2, 8),
+  (9, 9, 1, 9),
+  (10, 10, 3, 10),
+  (11, 11, 2, 11),
+  (12, 12, 1, 12),
+  (13, 13, 4, NULL), -- Sin reseña
+  (14, 2, 3, 13),
+  (15, 4, 2, 14),
+  (16, 6, 1, 15),
+  (17, 8, 3, 16),
+  (18, 10, 2, 17),
+  (19, 12, 1, 18),
+  (20, 14, 4, 19),
+  (21, 16, 2, 20),
+  (22, 18, 1, 21),
+  (23, 20, 3, 22),
+  (24, 22, 2, 23),
+  (25, 24, 1, NULL); -- Sin reseña
+  
+SELECT*FROM tb_detalle_pedidos;
+
+
