@@ -1,6 +1,9 @@
+-- Iniciar sesión como usuario root
 mysql -u root
+
 -- Crear usuario
-CREATE USER 'powerletters'@'%' IDENTIFIED BY 'tienda123';
+CREATE USER 'powerlettersAdmin'@'%' IDENTIFIED BY 'tienda123';
+
 -- Asignar permisos
-GRANT SELECT, INSERT, UPDATE, DELETE ON powerletters.* TO 'powerletters'@'%';
-GRANT EXECUTE, CREATE ON powerletters.* TO 'powerletters'@'%';
+GRANT SELECT, INSERT, UPDATE, DELETE ON powerletters.* TO 'powerlettersAdmin'@'%';
+GRANT EXECUTE, CREATE ON powerletters.* TO 'powerlettersAdmin'@'%';
