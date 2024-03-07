@@ -26,24 +26,24 @@ CREATE TABLE tb_administradores (
 
 CREATE TABLE tb_genero (
     id_genero INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20)
+    nombre VARCHAR(100)
 );
  
 CREATE TABLE tb_clasificaciones (
     id_clasificacion INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20),
-    descripcion VARCHAR(100)
+    nombre VARCHAR(100),
+    descripcion VARCHAR(200)
 );
  
 CREATE TABLE tb_autores (
     id_autor INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(30),
+    nombre VARCHAR(100),
     biografia VARCHAR(100)
 );
  
 CREATE TABLE tb_editoriales (
     id_editorial INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20)
+    nombre VARCHAR(100)
 );
  
 CREATE TABLE tb_libros (
@@ -88,5 +88,6 @@ CREATE TABLE tb_detalle_pedido (
     CONSTRAINT fk_libro FOREIGN KEY (id_libro) REFERENCES tb_libros(id_libro),
     CONSTRAINT fk_resenia FOREIGN KEY (id_resena) REFERENCES tb_resenias(id_resena)
 );
+	
 	
 	
