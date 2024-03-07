@@ -1,0 +1,6 @@
+mysql -u root
+-- Crear usuario
+CREATE USER 'powerletters'@'%' IDENTIFIED BY 'tienda123';
+-- Asignar permisos
+GRANT SELECT, INSERT, UPDATE, DELETE ON powerletters.* TO 'powerletters'@'%';
+GRANT EXECUTE, CREATE ON powerletters.* TO 'powerletters'@'%';
