@@ -26,24 +26,24 @@ CREATE TABLE tb_administradores (
 
 CREATE TABLE tb_generos (
     id_genero INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20)
+    nombre VARCHAR(100)
 );
  
 CREATE TABLE tb_clasificaciones (
     id_clasificacion INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20),
+    nombre VARCHAR(100),
     descripcion VARCHAR(100)
 );
  
 CREATE TABLE tb_autores (
     id_autor INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(30),
+    nombre VARCHAR(100),
     biografia VARCHAR(100)
 );
  
 CREATE TABLE tb_editoriales (
     id_editorial INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(20)
+    nombre VARCHAR(100)
 );
  
 CREATE TABLE tb_libros (
