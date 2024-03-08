@@ -9,8 +9,11 @@ FOR EACH ROW
 BEGIN
     -- Actualiza las existencias del libro afectado por el nuevo pedido
     UPDATE tb_libros
-    SET existencias = existencias - NEW.cantidad
-    WHERE id_libro = NEW.id_libro;
+	 SET existencias = CASE
+	 WHEN existencias - NEW.cantidad < 0 THEN 0
+	 ELSE existencias - NEW.cantidad
+	 END
+WHERE id_libro = NEW.id_libro;
 END;
 DELIMITER ;
 
