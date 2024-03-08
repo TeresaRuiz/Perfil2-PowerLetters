@@ -73,10 +73,9 @@ INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telef
 VALUES ('Lucía Herrera', 'lherrera', 'lherrera@gmail.com', 'password1234', 'Plaza Moderna 1234','555-6789','imagen24.jpg');
 
 INSERT INTO tb_usuarios (nombre, nombre_usuario, correo, clave, direccion, telefono, imagen)
-VALUES ('Pablo Ortega', 'portega', 'portega@gmail.com', 'clave5678', 'Avenida Futura 5678','555-9012','imagen25.jpg')
+VALUES ('Pablo Ortega', 'portega', 'portega@gmail.com', 'clave5678', 'Avenida Futura 5678','555-9012','imagen25.jpg');
 
-SELECT*FROM tb_usuarios;
-
+SELECT * FROM tb_usuarios;
 INSERT INTO tb_administradores (nombre_administrador, user_administrador, correo_administrador, clave_administrador, telefono_adm, fecha_registro, imagen)
 VALUES ('Lionel Messi', 'lmessi', 'lmessi@gmail.com', 'messi123', '555-1234', '2024-03-06 10:00:00', 'imagen1.jpg');
 
